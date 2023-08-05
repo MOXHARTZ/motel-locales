@@ -1,3 +1,0 @@
-return {
-    ['en'] = 'en.lua'
-}

@@ -57,6 +57,16 @@ return {
     ['creator.select.room_management'] = 'Awesome, now select the room management point',
     ['creator.select.rooms'] = 'Last step, create rooms',
     ['creator.point.busy'] = 'This point is selected. Select another point',
+    ['creator.inside.text.stash'] = 'Stash - %s',
+    ['creator.inside.text.gardrobe'] = 'Gardrobe - %s',
+    ['creator.inside.complete'] = 'You must add at least one stash and gardrobe!',
+    ['creator.door.create'] = 'You must add at least one door',
+    ['creator.select.ipl'] = 'Select a ipl',
+    ['creator.select.shell'] = 'Select a shell',
+    ['creator.select.exit'] = 'Select exit position',
+    ['creator.select.inside'] = 'Select stash and gardrobe points',
+    ['creator.select.doors'] = 'Select door points',
+    ['creator.inside.point.outside'] = 'Point is outside of shell',
 
     -- * Creator Blips
     ['creator.blip.sprite'] = 'Sprite',
@@ -76,7 +86,7 @@ return {
     ['creator.checkbox.unique_rooms'] = 'Unique Rooms',
     ['creator.checkbox.unique_rooms.tooltip'] = 'This feature is W.I.P. Coming soon',
     -- ['creator.checkbox.unique_rooms.tooltip'] = [[
-    --     If you're going to activate it, you should know these:\n
+    --     If you're going to deactivate it, you should know these:\n
     --     - Motel room's stashes are not will be unique anymore.\n
     --     - You can't use this with mlo.\n
     --     - Motel will no longer be manageable.
@@ -453,6 +463,7 @@ return {
     ['motel_notfounded'] = 'Motel room not found!',
     ['motel_admin'] = 'Management',
     ['general.motel_suspended'] = 'Your motel room was suspended because you didnt pay your motel rent. Pay as soon as you can!',
+    ['general.room_is_empty'] = 'This room doesn\'t have a owner. So you can\'t get in',
     ['motel_paySuspended'] = 'Your room price has been taxed from the motel. Pay your rent as soon as possible. New Room Price: %s',
     ['motel_acceptRequest'] = 'Request granted.',
     ['motel_rejectRequest'] = 'Request Denied.',
@@ -481,4 +492,8 @@ return {
     ['door'] = 'Door',
     ['urnotOwnThisRoom'] = 'You don\'t have the key to the room',
     ['alreadyOwnerMotel'] = 'This motel is already owned by another',
+    ['enter_room'] = '~r~[E]~s~ Enter Room',
+    ['leave_room'] = '~r~[E]~s~ Leave Room',
+    ['general.motel_deleted_teleport'] = 'We teleported you because the motel was deleted.',
+    ['general.teleported_to_reception'] = 'We teleported you to the reception because your room is gone'
 }
