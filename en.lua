@@ -1,4 +1,4 @@
-return {
+Langs['en'] = {
     -- * Elevator
     ['general.elevator'] = '~r~[E]~s~ Elevator',
     ['general.elevator_header'] = 'Elevator',
@@ -475,6 +475,7 @@ return {
     ['motel_removed'] = 'Your Motel room was deleted because you didnt pay your rent.',
     ['motel_notfounded'] = 'Motel room not found!',
     ['motel_admin'] = 'Management',
+    ['general.room.suspended'] = 'This room is suspended.',
     ['general.motel_suspended'] = 'Your motel room was suspended because you didnt pay your motel rent. Pay as soon as you can!',
     ['general.room_is_empty'] = 'This room doesn\'t have a owner. So you can\'t get in',
     ['motel_paySuspended'] = 'Your room price has been taxed from the motel. Pay your rent as soon as possible. New Room Price: %s',
