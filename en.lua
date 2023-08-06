@@ -20,7 +20,7 @@ return {
     ['sharing.key_unshared'] = 'You got your key back.',
     ['sharing.you_shared_key'] = 'You now have the key to the %s',
     ['sharing.key_shared'] = 'You shared your key.',
-    ['general.not_useable'] = 'Do a crazy and give your key.',
+    ['general.not_useable'] = 'Do a crazy and give your motelkey.',
     ['general.share_key'] = 'Share Key',
     ['general.share_key_desc'] = 'Closest Players',
     ['general.share_key_modal'] = 'Are you sure you want to share your key?',
@@ -34,6 +34,7 @@ return {
     ['creator.title'] = 'Creator Menu',
     ['creator.sale'] = 'Motel sale percentage',
     ['creator.sale.tooltip'] = 'How much times of the sale price. Example: 1.5 = 150% of the sale price.',
+    ['creator.room_count'] = 'Room Count',
     ['creator.warning.expense.title'] = 'Warning Expenses',
     ['creator.warning.first'] = 'First Warning',
     ['creator.warning.second'] = 'Second Warning',
@@ -54,6 +55,10 @@ return {
     ['creator.add.stash'] = 'Add Stash',
     ['creator.add.gardrobe'] = 'Add Gardrobe',
     ['creator.select.reception'] = 'Select reception point',
+    ['creator.select.room.management'] = 'Set Room Management Point',
+    ['creator.select.shell.point'] = 'Set Shell Point',
+    ['creator.select.exit.point'] = 'Set Exit Point',
+    ['creator.select.entry.point'] = 'Set Entry Point',
     ['creator.select.room_management'] = 'Awesome, now select the room management point',
     ['creator.select.rooms'] = 'Last step, create rooms',
     ['creator.point.busy'] = 'This point is selected. Select another point',
@@ -65,7 +70,7 @@ return {
     ['creator.select.shell'] = 'Select a shell',
     ['creator.select.exit'] = 'Select exit position',
     ['creator.select.inside'] = 'Select stash and gardrobe points',
-    ['creator.select.doors'] = 'Select door points',
+    ['creator.select.entry'] = 'Select room entry point',
     ['creator.inside.point.outside'] = 'Point is outside of shell',
 
     -- * Creator Blips
@@ -80,17 +85,9 @@ return {
 
     -- * Creator Checkboxes
     ['creator.checkbox.sell'] = 'Motel is salable',
-    ['creator.checkbox.purchasable'] = 'Motel is purchasable',
-    ['creator.checkbox.auto'] = 'Manage motel automatically',
-    ['creator.checkbox.blip'] = 'Motel blip',
-    ['creator.checkbox.unique_rooms'] = 'Unique Rooms',
-    ['creator.checkbox.unique_rooms.tooltip'] = 'This feature is W.I.P. Coming soon',
-    -- ['creator.checkbox.unique_rooms.tooltip'] = [[
-    --     If you're going to deactivate it, you should know these:\n
-    --     - Motel room's stashes are not will be unique anymore.\n
-    --     - You can't use this with mlo.\n
-    --     - Motel will no longer be manageable.
-    -- ]],
+    ['creator.checkbox.purchasable'] = 'Purchasable',
+    ['creator.checkbox.auto'] = 'Auto System',
+    ['creator.checkbox.blip'] = 'Blip',
 
     -- * Creator Inputs
     ['creator.input.name'] = 'Motel Name',
@@ -148,11 +145,17 @@ return {
     ['general.message'] = 'Message',
     ['general.access_denied'] = 'You do not have permission to do this action',
     ['general.not_enough_money'] = 'You don\'t have enough money.',
+    ['general.not_enough_money_count'] = 'You don\'t have enough money. Required $%s',
     ['general.have_already_room'] = 'This person have already a motel room.',
     ['general.room_have_owner'] = 'This room have already a owner',
     ['general.teleported_msg'] = 'You teleported the front of the door',
     ['general.not_closest_room'] = 'You are not near the room',
     ['general.nearby_motel'] = 'There is another motel nearby.',
+    ['general.not_exists_shell'] = 'You don\'t have a shell. Please add it to the Config.Shells',
+
+    -- * Raid
+    ['raid.not_job'] = 'You can\'t use this',
+    ['raid.success'] = 'You broked',
 
     -- * Admin Modal
     ['admin.select_motel'] = 'Select Motel',
@@ -326,6 +329,14 @@ return {
     ['general.reception_notIngame'] = 'The person is not in the game.',
     ['general.static.motel'] = 'This motel is static. You can\'t delete it. You can only delete motels created in-game',
     ['general.no_nearby_motel'] = 'You are not close to any motels. Make sure you\'re close to the reception',
+    ['general.open.room_menu'] = '~r~[E]~s~ Open Room Menu',
+    ['general.not_exist_available_room'] = 'There are no rooms in the motel that you can enter.',
+    ['general.room.menu'] = 'Room Menu',
+    ['general.room.menu.description'] = 'You can go to your room or u.u',
+    ['general.room'] = 'Room',
+    ['general.owner'] = '(Yours)',
+    ['general.unlocked'] = '🔓 Unlocked',
+    ['general.locked'] = '🔒 Locked',
 
     -- * Transactions
     ['trans.deposite'] = '%s deposited %s',
@@ -386,6 +397,8 @@ return {
     ['permission_active'] = 'Active',
     ['permission_deactive'] = 'Passive',
 
+    ['general.room_menu.admin'] = '(Admin Permission)',
+
     -- * Log
     ['general.rent_motel'] = '**%s Rented A Room** \n **Motel Name**: %s \n **Room ID**: %s \n **Time**: %s \n **Price**: $%s',
     ['general.motel_owner'] = 'Motel Owner',
@@ -444,7 +457,7 @@ return {
     -- * Main
     ['buy_alreadyhouse'] = 'The person already has a motel room',
     ['general.rented_room_send_message_to_worker'] = 'You successfully rented room %s in the %s to %s.',
-    ['general.rented_room'] = 'You rented the room',
+    ['general.rented_room'] = 'You rented the room price',
     ['general.rented_room_by_worker'] = 'You bought room number %s in the %s from %s!',
     ['notfoundedplayer'] = 'Player not found!',
     ['hacker_probably'] = 'Suspect Cheating! Player ID: %s HEX ID: %s Reason: Tried to rent a motel room',
@@ -495,5 +508,10 @@ return {
     ['enter_room'] = '~r~[E]~s~ Enter Room',
     ['leave_room'] = '~r~[E]~s~ Leave Room',
     ['general.motel_deleted_teleport'] = 'We teleported you because the motel was deleted.',
-    ['general.teleported_to_reception'] = 'We teleported you to the reception because your room is gone'
+    ['general.teleported_to_reception'] = 'We teleported you to the reception because your room is gone',
+
+    ['commands.admin.suggestion'] = 'Open Admin Menu (Admin only)',
+    ['commands.creator.suggestion'] = 'Open Creator Menu (Admin only)',
+    ['commands.creator.delete.suggestion'] = 'Delete the closest motel (Admin only)',
+    ['commands.roomsharing.suggestion'] = 'Open Room Sharing Menu'
 }
