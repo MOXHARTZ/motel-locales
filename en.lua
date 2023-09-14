@@ -234,6 +234,7 @@ Langs['en'] = {
     ['employees.withdraw'] = 'Withdraw Money',
     ['employees.deposit'] = 'Deposit Money',
     ['employees.update_status'] = 'Update Motel Status',
+    ['employees.open_room'] = 'Access To Rooms',
 
     -- * Customers
     ['customers.debt'] = 'Debt: ',
@@ -497,7 +498,7 @@ Langs['en'] = {
     ['minute'] = 'Minute',
     ['hour'] = 'Hours',
     ['day'] = 'Day',
-    ['motel_removed'] = 'Your Motel room was deleted because you didnt pay your rent.',
+    ['motel_removed'] = 'Your Motel room was deleted.',
     ['motel_notfounded'] = 'Motel room not found!',
     ['motel_admin'] = 'Management',
     ['general.room.suspended'] = 'This room is suspended.',
