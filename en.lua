@@ -306,6 +306,12 @@ Langs['en'] = {
     ['self.call_employee'] = 'Call Employee',
     ['self.req_key'] = 'Request Key',
     ['self.room_change'] = 'Request Room Change',
+    ['self.max_time'] = 'You can not increase your rent time more than 30 days',
+    ['self.error'] = 'Unexpected error',
+    ['self.increase_time_success'] = 'Time increased successfully',
+    ['self.increase_time_popup_header'] = 'Are you sure you want to increase time?',
+    ['self.increase_time_header'] = 'Increase Time',
+    ['self.increase_time'] = 'Increase Time',
 
     -- * Self Rent
     ['self.modal_rent_room'] = 'Are you sure you want to rent the room?',
